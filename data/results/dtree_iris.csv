@@ -1,0 +1,5 @@
+['dtree_iris', ClassificationInvestigator, [1, 3, 9, 21], <decision_tree.DecisionTree object at 0x118f047b8>, ClassificationLF] results
+D-tree: 
+
+avg_accuracy,avg_accuracy_sd
+0.7777777777777779,0.09322745317068017
