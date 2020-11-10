@@ -80,10 +80,11 @@ def main():
 
     parser.add_argument('--model-type', action="store", default="all")
     parser.add_argument('--dataset', action="store", default="iris")
-    parser.add_argument('--k-values', action="store", default=[1,3,9,21])
+    parser.add_argument('--k-values', action="store", default=[1,3,5,10,15,20,30,40,50])
     parser.add_argument('--point-threshold', action="store", default=5)
     parser.add_argument('--pi', action="store", default=0.95)
 
+    python3 runner.py --model-type knn --dataset iris --k-values
 
     args = parser.parse_args()
     logging_util.start_logging()
@@ -98,7 +99,7 @@ def main():
 
     # Amounts determined from the average amount of data points produce with ENN for these data sets
 
-    k_values = args.k_values
+    k_values = [args.k_values]
 
     # # Add knn runners
     if args.model_type == "all" or args.model_type == "knn":
